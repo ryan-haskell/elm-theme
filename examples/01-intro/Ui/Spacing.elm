@@ -1,23 +1,13 @@
 module Ui.Spacing exposing
-    ( Spacing
-    , sm
+    ( Spacing(..)
     , toThemeSpacing
     )
 
 import Theme.Spacing
 
 
-
--- SPACINGS
-
-
 type Spacing
     = Sm
-
-
-sm : Spacing
-sm =
-    Sm
 
 
 toThemeSpacing : Spacing -> Theme.Spacing.Spacing

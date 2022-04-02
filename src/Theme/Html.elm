@@ -24,18 +24,11 @@ type alias Theme color fontSize spacing =
     }
 
 
-new :
+toHtml :
     { toColor : color -> Theme.Color.Color
     , toFontSize : fontSize -> Theme.FontSize.FontSize
     , toSpacing : spacing -> Theme.Spacing.Spacing
     }
-    -> Theme color fontSize spacing
-new options =
-    options
-
-
-toHtml :
-    Theme color fontSize spacing
     -> List (Attribute color fontSize spacing msg)
     -> Html color fontSize spacing msg
     -> Html.Html msg

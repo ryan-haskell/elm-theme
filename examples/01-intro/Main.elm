@@ -14,8 +14,8 @@ main =
 
 view : Ui.Html msg
 view =
-    Theme.column
-        [ Theme.gap Ui.Spacing.sm, Theme.align.center ]
-        [ Theme.typography Ui.FontSize.h1 "Hello, world!"
-        , Theme.typography Ui.FontSize.h2 "How are you?"
+    Ui.column
+        [ Ui.gap Ui.Spacing.Sm, Ui.align.center ]
+        [ Ui.typography Ui.FontSize.H1 "Hello, world!"
+        , Ui.typography Ui.FontSize.H2 "How are you?"
         ]

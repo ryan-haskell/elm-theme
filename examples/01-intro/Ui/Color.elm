@@ -1,19 +1,10 @@
-module Ui.Color exposing (Color, red, toThemeColor)
+module Ui.Color exposing (Color(..), toThemeColor)
 
 import Theme.Color
 
 
-
--- COLORS
-
-
 type Color
     = Red
-
-
-red : Color
-red =
-    Red
 
 
 toThemeColor : Color -> Theme.Color.Color

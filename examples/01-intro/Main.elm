@@ -1,7 +1,6 @@
 module Main exposing (main)
 
 import Html
-import Theme
 import Ui
 import Ui.FontSize
 import Ui.Spacing
@@ -9,7 +8,7 @@ import Ui.Spacing
 
 main : Html.Html msg
 main =
-    Ui.toHtml [ Theme.align.centerY ] view
+    Ui.toHtml [ Ui.align.centerY ] view
 
 
 view : Ui.Html msg
